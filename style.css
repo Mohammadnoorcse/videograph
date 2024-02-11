@@ -1,0 +1,570 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap') */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+.container{
+    width: 100vmax;
+    height: auto;
+}
+.header{
+    width: 100vmax;
+    height: 38vmax;
+    /* border: 1px saddlebrown solid; */
+    background-image: url('/image/10011.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    
+}
+.navbar{
+    width: 60%;
+    height: 2.5vmax;
+    /* border: 1px red solid; */
+    margin-top: 1vmax;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+.left>a{
+    font-size: 1vmax;
+    font-weight: bold;
+}
+.middle>a{
+    margin-right: 1vmax;
+    padding-bottom: 0.2vmax;
+  
+    
+}
+
+.middle>a:hover,.active{
+    
+    border-bottom: 2px solid #00BFE7;
+    
+}
+
+.second-part{
+    width: 30%;
+    color: white;
+    position: relative;
+    top: 10vmax;
+    left: -10vmax;
+    display: flex;
+    flex-direction: column;
+}
+.second-part>p{
+    color: white;
+    font-size: 1vmax;
+    letter-spacing: 1px;
+    margin-bottom: 1.5vmax;
+}
+.second-part>span{
+    font-size: 2.5vmax;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    
+   
+}
+.second-btn{
+    margin-top: 2.5vmax;
+    position: relative;
+    cursor: pointer;
+}
+.second-btn>span{
+    padding: 2.5vmax 1vmax;
+}
+.first{
+    position: absolute;
+    top: -.8vmax;
+    left: 0vmax;
+    width: 0.1vmax;
+    height: 2vmax;
+    background-color: #00BFE7;
+    transition: height 2s ease-in-out;
+}
+.second{
+    position: absolute;
+    top: -0.8vmax;
+    left: 0vmax;
+    width: 2vmax;
+    height: 0.1vmax;
+    background-color: #00BFE7;
+    transition: width 2s ease-in-out;
+}
+.third{
+    position: absolute;
+    top: 2vmax;
+    left: 9vmax;
+    width: 2vmax;
+    height: 0.1vmax;
+    background-color: #00BFE7;
+    transition: width 2s ease-in-out;
+}
+.four{
+    position: absolute;
+    top: 0.1vmax;
+    left: 11vmax;
+    width: 0.1vmax;
+    height: 2vmax;
+    background-color: #00BFE7;
+    transition: height 2s ease-in-out;
+}
+
+.second-btn:hover .first{
+    height: 2.9vmax;
+    
+}
+.second-btn:hover .second{
+    width: 11vmax;
+    
+}
+.second-btn:hover .third{
+    width: 11vmax;
+    left: 0vmax;
+    
+}
+.second-btn:hover .four{
+    top: -0.8vmax;
+    height: 2.9vmax;
+    
+    
+}
+
+.second-section{
+    width: 100vmax;
+    height: 35vmax;
+    background-color: #100028;
+    display: flex;
+    justify-content: center;
+}
+
+.second-section-content{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid saddlebrown; */
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.second-grid-1{
+    /* border: 1px slateblue solid; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vmax;
+}
+
+.second-grid-1>p{
+    color: white;
+    margin-bottom: 1vmax;
+}
+.second-grid-1>span:nth-child(2){
+    color: white;
+    font-size: 2vmax;
+    font-weight: bold;
+    margin-bottom: 1vmax;
+}
+.second-grid-1>.mar{
+    width: 3vmax;
+    height: 0.5vmax;
+    background-color: #00BFE7;
+    margin-bottom: 1.5vmax;
+}
+.a{
+    color: #A3A2A5;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.all{
+    margin-top: 3vmax;
+    position: relative;
+}
+.all>span{
+    color: white;
+    padding: 2.5vmax 1vmax;
+}
+
+
+.all:hover .first{
+    height: 2.9vmax;
+    
+}
+.all:hover .second{
+    width: 11vmax;
+    
+}
+.all:hover .third{
+    width: 11vmax;
+    left: 0vmax;
+    
+}
+.all:hover .four{
+    top: -0.8vmax;
+    height: 2.9vmax;
+    
+    
+}
+
+.second-grid-2{
+    margin-top: 4vmax;
+    margin-left: 2vmax;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5vmax;
+}
+.second-grid-item-img{
+ width: 4vmax;
+ height: 4vmax;
+ border: 1px #00BFE7 solid;
+ margin-bottom: 1vmax;
+ transition: 0.5s;
+ cursor: pointer;
+}
+.second-grid-item-img>img{
+    padding: 1vmax 1vmax;
+      
+}
+
+.second-grid-item-1>span{
+    color: white;
+    font-size: 1.3vmax;
+    font-weight: bolder;
+    
+}
+.second-grid-item-1>p{
+    color: #A3A2A5;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-top: 1vmax;
+}
+
+.second-grid-item-img:hover{
+    border: 1px solid red;
+    transform: rotate(30deg);
+}
+
+.seciton-third{
+    width: 100vmax;
+    height: 40vmax;
+    background-color: #100028;
+    
+}
+
+.section-four{
+    width: 100vmax;
+    height: 45vmax;
+    background-color: #100028;
+    display: flex;
+    justify-content: center;
+}
+.section-four-content{
+    width: 60%;
+    height: 100%;
+    /* border: 1px saddlebrown solid; */
+    position: relative;
+}
+.t{
+    width: 30vmax;
+    height: 30vmax;
+    background-color: #323133;
+    clip-path: polygon(0 0, 57% 58%, 100% 100%);
+    
+}
+.t1{
+    width: 30vmax;
+    height: 30vmax;
+    background-color: #323133;
+    position: absolute;
+    top: 0vmax;
+    left: 0vmax;
+    clip-path: polygon(100% 0, 43% 56%, 0 100%);
+   
+    
+}
+.t2{
+    width: 30vmax;
+    height: 30vmax;
+    background-color: #323133;
+    position: absolute;
+    top: 0vmax;
+    left: 30vmax;
+    clip-path: polygon(0 0, 57% 58%, 100% 100%);
+   
+    
+}
+.t3{
+    width: 30vmax;
+    height: 30vmax;
+    background-color: #323133;
+    position: absolute;
+    top: 0vmax;
+    left: 30vmax;
+    clip-path: polygon(100% 0, 43% 56%, 0 100%); 
+}
+.t4{
+    width: 30vmax;
+    height: 25vmax;
+    background-color: #323133;
+    position: absolute;
+    top: 15vmax;
+    left: 20vmax;
+    clip-path: polygon(0 0, 57% 58%, 100% 100%);
+    
+}
+.t5{
+    width: 30vmax;
+    height: 25vmax;
+    background-color: #323133;
+    position: absolute;
+    top: 11vmax;
+    left: 15vmax;
+    clip-path: polygon(100% 0, 43% 56%, 0 100%);
+    
+    
+}
+.t6{
+    width: 18vmax;
+    height: 18vmax;
+    background-color: #1A083D;
+    position: absolute;
+    top: 15vmax;
+    left: 6vmax;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); 
+    
+    
+}
+.t6>img{
+    width: 10px;
+}
+
+.t7{
+    width: 18vmax;
+    height: 18vmax;
+    background-color: #1A083D;
+    position: absolute;
+    top: 5.3vmax;
+    left: 21vmax;
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);  */
+    clip-path: polygon(50% 0%, 100% 59%, 50% 100%, 0 58%);
+    
+}
+.t8{
+    width: 18vmax;
+    height: 18vmax;
+    background-color: #1A083D;
+    position: absolute;
+    top: 15vmax;
+    left: 36vmax;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); 
+    
+}
+
+.t9{
+    width: 20vmax;
+    height: 20vmax;
+    background-color: #323133;
+    position: absolute;
+    top: 11vmax;
+    left: 45vmax;
+    clip-path: polygon(0 0, 57% 58%, 100% 100%);
+    
+}
+
+.t10{
+    width: 18vmax;
+    height: 18vmax;
+    background-color: #1A083D;
+    position: absolute;
+    top: 4vmax;
+    left: 47vmax;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); 
+    
+}
+
+.t0{
+    width: 7vmax;
+    height: 5vmax;
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.t0>img{
+    margin-bottom: 1vmax;
+}
+
+.t0>h1{
+    font-size: 2.5vmax;
+    margin-bottom: 0.5vmax;
+}
+
+.t11{
+    position: absolute;
+    top: 20vmax;
+    left: 11vmax;
+}
+.t12{
+    position: absolute;
+    top: 11vmax;
+    left: 26vmax;
+}
+.t13{
+    position: absolute;
+    top: 20vmax;
+    left: 41vmax;
+}
+.t14{
+    position: absolute;
+    top: 9vmax;
+    left: 52vmax;
+}
+
+.section-five{
+    width: 100vmax;
+    height: 40vmax;
+    background-image: url('./image/10019.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.section-five-content{
+    width: 60%;
+    height: 100%;
+    /* border: 1px saddlebrown solid; */
+}
+.section-five-text{
+    margin-top: 3vmax;
+    color: white;
+}
+.section-five-text>p{
+    font-size: 1.1vmax;
+    letter-spacing: 1px;
+    margin-bottom: 0.8vmax;
+}
+.section-five-text>span{
+    font-size: 1.5vmax;
+    font-weight: bold;
+  
+}
+.section-five-text>div{
+    width: 3vmax;
+    height: .5vmax;
+    background-color: #00BFE7;
+    margin-top: 0.6vmax;
+}
+
+.section-five-item{
+    display: flex;
+    margin-top: 2vmax;
+}
+.section-five-item>div>img{
+    width: 14vmax;
+}
+
+.section-five-item>div:nth-child(1){
+    margin-top: 8vmax;
+}
+.section-five-item>div:nth-child(2){
+    margin-top: 4vmax;
+}
+.section-five-item>div:nth-child(3){
+    margin-top: 2vmax;
+}
+.section-five-btn{
+    position: relative;
+    top: -5vmax;
+    left: 45vmax;
+}
+
+.section-six{
+    width: 100vmax;
+    height: 30vmax;
+    background-color: #100028;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vmax;
+    
+   
+}
+.section-six-content{
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid saddlebrown; */
+    display: grid;
+    gap: 1vmax;
+    grid-template-columns: repeat(6,1fr);
+    /* overflow-x: auto;
+    scrollbar-width: none; */
+    /* white-space:nowrap; */
+    overflow: hidden;
+}
+/* .section-six-content::-webkit-scrollbar{
+    display: none;
+} */
+
+.carousel-slide{
+    width: 19vmax;
+    height: 20vmax;
+    padding: 1vmax;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #323133;
+
+    
+}
+/* @keyframes autoplay1{
+    0%{
+        visibility: visible;
+    }
+    33.33%{
+        visibility: hidden;
+    }
+}
+.carousel-slide:nth-child(1){
+    animation-duration: 0s;
+    
+}
+.carousel-slide:nth-child(2){
+    animation-duration: 4s;
+
+}
+.carousel-slide:nth-child(3){
+    animation-duration: 8s;
+
+} */
+.carousel-slide>h1{
+    color: white;
+    font-size: 1.3vmax;
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
+}
+.carousel-slide>span{
+    color:#323133;
+    margin-bottom: 1vmax;
+}
+.carousel-slide>p{
+    color: #323133;
+    margin-bottom: 3vmax;
+}
+
